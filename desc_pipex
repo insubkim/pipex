@@ -1,0 +1,26 @@
+pipex
+
+    "file1 cmd1 cmd2 cmd3 ... cmdn file2"
+    "< file1 cmd1 | cmd2 | cmd3 | ... | cmdn > file2"
+    and
+    "heredoc limiter cmd1 | cmd2 | cmd3 | ... | cmdn file2"
+    "cmd1 << limiter | cmd2 | cmd3 | ... | cmdn >> file2"
+
+
+
+
+check_arg
+correct file
+    open(file)
+correct cmd
+    ?
+
+
+
+error
+
+if 
+write end of file is wrong
+the preceding command is not executed, it is ignored
+noting is written on write end
+the next command is executed.

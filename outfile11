@@ -1,0 +1,24 @@
+total 264
+-rwxr-xr-x  1 inskim  2022_seoul  53560 Dec 20 15:14 a.out
+drwxr-xr-x  3 inskim  2022_seoul    102 Dec 20 13:32 a.out.dSYM
+-rw-r--r--  1 inskim  2022_seoul    443 Dec 20 12:18 desc_pipex
+-rw-r--r--  1 inskim  2022_seoul   1055 Dec 20 12:46 free.c
+-rw-r--r--  1 inskim  2022_seoul   2053 Dec 20 12:38 ft_split.c
+-rw-r--r--  1 inskim  2022_seoul   1205 Dec 20 11:27 ft_strncmp.c
+-rw-r--r--  1 inskim  2022_seoul    971 Dec 20 13:12 handle_error.c
+-rw-r--r--  1 inskim  2022_seoul   1129 Dec 20 11:39 heredoc_pipe.c
+-rw-r--r--  1 inskim  2022_seoul   1176 Dec 20 14:23 main.c
+-rw-r--r--  1 inskim  2022_seoul   1709 Dec 20 15:14 make_command_process.c
+-rw-r--r--  1 inskim  2022_seoul   1335 Dec 20 15:03 outfile
+-rw-r--r--  1 inskim  2022_seoul   1397 Dec 20 15:03 outfile1
+-rw-r--r--  1 inskim  2022_seoul      0 Dec 20 15:15 outfile11
+-rw-r--r--  1 inskim  2022_seoul   2217 Dec 20 14:40 parse.c
+-rw-r--r--  1 inskim  2022_seoul   1641 Dec 20 14:41 pipex.h
+-rw-r--r--  1 inskim  2022_seoul   1368 Dec 20 13:25 pipex_strjoin.c
+-rw-r--r--  1 inskim  2022_seoul   1521 Dec 20 14:43 read_file_pipe.c
+-rwxrwxrwx  1 inskim  2022_seoul    245 Dec 20 12:36 test.c
+-rwxrwxrwx  1 inskim  2022_seoul     33 Dec 20 15:01 text
+-rw-r--r--  1 inskim  2022_seoul      0 Dec 20 14:46 text1
+-rw-r--r--  1 inskim  2022_seoul      5 Dec 20 14:55 text2
+-rw-r--r--  1 inskim  2022_seoul      5 Dec 20 14:55 text3
+-rw-r--r--  1 inskim  2022_seoul     25 Dec 20 14:55 text4
