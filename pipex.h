@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/20 14:41:04 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/21 13:00:42 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
+ #include <string.h>
 
 typedef struct s_process_fd_info
 {
@@ -35,7 +36,7 @@ char *const* get_command_arg(char *argv);
 char	**ft_split(char const *s, char c);
 void    handle_error(void);
 void    free_string_arr(char **arr);
-int make_command_process(int command_count, char **commands, int file1_fd, \
+int make_command_process(int command_count, int file1_fd, \
 int file2_fd);
 
 #endif

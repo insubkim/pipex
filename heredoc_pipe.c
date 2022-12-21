@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/20 11:39:12 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/21 13:15:14 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,4 +20,7 @@ void    heredoc_pipe(int argc, char **argv, char **envp)
 
     //read 0 until LIMITER
     //write 1 read string
+    argc--;
+    argv++;
+    envp++;
 }

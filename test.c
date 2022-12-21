@@ -6,7 +6,11 @@
 
 int main(int c ,char **argv, char **envp)
 {
-    execve("./a.out", argv, envp);
+    int fd[2];
+    pipe(fd);
+    dup2(fd[0], 0);
+    close(fd[1]);
+    execve("/usr/bin/wc", argv, envp);
     perror(" >> ");
     //printf("%d\n", access("./a.out", F_OK));
 }
