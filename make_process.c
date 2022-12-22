@@ -12,22 +12,34 @@
 
 #include "pipex.h"
 
-void    make_pipe(int file1_fd, int file2_fd, int index, int *read_end)
+int    set_pipe(int read_end, int file2_fd, int index, int command_count)
 {
-    
+    int pipe_fd[2];
+    dup2(read_end, 0);
+    if (index != 0)
+        close(read_end);
+    pipe(pipe_fd);
+    if (index == command_count - 1)
+    {
+        dup2(file2_fd, 1);
+        close(pipe_fd[0]);
+    }
+    else
+        dup2(pipe_fd[1], 1);
+    close(pipe_fd[1]);
+    return (pipe_fd[0]);
 }
 
-int make_process(int command_count, int file1_fd, \
-int file2_fd)
+int make_process(int command_count, int file1_fd, int file2_fd)
 {
     int     i;
     pid_t   pid;
     int     read_end;
-
     i = 0;
+    read_end = file1_fd;
     while (i < command_count)
     {
-        make_pipe(file1_fd, file2_fd, i, &read_end);
+        read_end = set_pipe(read_end, file2_fd, i, command_count);
         pid = fork();
         if (!pid)
             break ;
@@ -35,6 +47,5 @@ int file2_fd)
     }
     if (pid)
         exit(0);
-    perror("");
-    return (i);
+    return (i + 1);
 }
