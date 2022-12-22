@@ -6,7 +6,7 @@
 #    By: inskim <inskim@student.42seoul.kr>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/01 22:08:10 by inskim            #+#    #+#              #
-#    Updated: 2022/12/22 21:34:40 by inskim           ###   ########.fr        #
+#    Updated: 2022/12/22 22:57:31 by inskim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ $(NAME): $(OBJ) $(HEADER)
 	cc -o $(NAME) *.o
 
 clean:
-	rm $(OBJ)
+
 fclean: clean
 	rm -f $(NAME) 
 

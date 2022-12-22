@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   parse.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
+/*   By: inskim <inskim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/20 14:40:57 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/22 23:05:18 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,9 +66,9 @@ char    *get_pathname(char *command, char **envp)
     free_string_arr(envp);
     if (pathname)
         return (pathname);
-    return (command);
-    //print command not found error
-    //if no path
+    write(2, strerror(ENOEXEC), strlen(strerror(ENOEXEC)));//excahnge to command not found error
+    exit(errno);
+    return (0);
 }
 
 char    *const*get_command_arg(char *argv)

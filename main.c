@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/22 22:17:48 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/22 23:05:03 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ int main(int argc, char **argv, char **envp)
         heredoc_pipe(--argc, argv, envp);
     else
         read_file_pipe(--argc, argv, envp);
-    return (0);
+    return (errno);
 }
