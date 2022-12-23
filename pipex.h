@@ -28,15 +28,15 @@ typedef struct s_process_fd_info
     int write_fd;
 }    t_process_fd_info;
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n);
-void    heredoc_pipe(int argc, char **argv, char **envp);
-void    read_file_pipe(int argc, char **argv, char **envp);
-char	*pipex_strjoin(char *s1, char *s2);
-char    *get_pathname(char *command, char **envp);
-char *const* get_command_arg(char *argv);
-char	**ft_split(char const *s, char c);
-void    handle_error(void);
-void    free_string_arr(char **arr);
-int make_process(int command_count, int file1_fd, int file2_fd);
+int	        ft_strncmp(const char *s1, const char *s2, size_t n);
+void        heredoc_pipe(int argc, char **argv, char **envp);
+void        read_file_pipe(int argc, char **argv, char **envp);
+char	    *pipex_strjoin(char *s1, char *s2);
+char        *get_pathname(char *command, char **envp);
+char *const *get_command_arg(char *argv);
+char	    **ft_split(char const *s, char c);
+void        handle_error(void);
+void        free_string_arr(char **arr);
+int         make_process(int command_count, int file1_fd, int file2_fd);
 
 #endif

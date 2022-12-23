@@ -47,5 +47,5 @@ int make_process(int command_count, int file1_fd, int file2_fd)
     }
     if (pid)
         exit(0);
-    return (i + 1);
+    return (i);
 }
