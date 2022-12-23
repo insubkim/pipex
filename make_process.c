@@ -19,7 +19,7 @@ int    set_pipe(int read_end, int file2_fd, int index, int command_count)
     if (index != 0)
         close(read_end);
     pipe(pipe_fd);
-    if (index == command_count - 1)
+    if (index == command_count - 1 && file2_fd >= 0)
     {
         dup2(file2_fd, 1);
         close(pipe_fd[0]);
@@ -46,6 +46,9 @@ int make_process(int command_count, int file1_fd, int file2_fd)
         i++;
     }
     if (pid)
+    {
+        waitpid(pid, &i,0);
         exit(0);
+    }
     return (i);
 }

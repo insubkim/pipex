@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 19:15:26 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/20 12:38:57 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/23 11:33:47 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,14 +88,14 @@ char	**ft_split(char const *s, char c)
 	word = cnt_word(s, c);
 	arr = (char **)malloc(sizeof(char *) * (word + 1));
 	if (!arr)
-		return (0);
+		handle_error();
 	arr[word] = 0;
 	if (s && !put(arr, s, c))
 	{
 		while (*arr)
 			free(*arr++);
 		free(arr);
-		return (0);
+		handle_error();
 	}
 	return (arr);
 }

@@ -19,7 +19,7 @@
 #include <errno.h>
 #include <stdlib.h>
 #include <stdio.h>
- #include <string.h>
+#include <string.h>
 
 typedef struct s_process_fd_info
 {
@@ -38,5 +38,9 @@ char	    **ft_split(char const *s, char c);
 void        handle_error(void);
 void        free_string_arr(char **arr);
 int         make_process(int command_count, int file1_fd, int file2_fd);
+void        print_command_not_found(char *command);
+void        print_file_error(char *filename);
+int         ft_strcmp(char *s1, char *s2);
+char    *ft_strjoin(char *s1, char *s2);
 
 #endif

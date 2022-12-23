@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 10:15:04 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/23 14:13:03 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,13 +29,16 @@ void    read_file_pipe(int argc, char **argv, char **envp)
     int file2_fd;
     int command_idx;
 
-    //open file2 in O_TRUNC | O_CREAT | O_WRONLY
     file2_fd = open(argv[argc - 1], O_TRUNC | O_WRONLY | O_CREAT, 0644);
-    //open file1 in O_RDONLY
+    if (file2_fd < 0)
+    {
+        print_file_error(argv[argc - 1]);
+        argc--;
+    }
     file1_fd = open(argv[0], O_RDONLY);
     if (file1_fd < 0)
     {
-        perror("");
+        print_file_error(argv[0]);
         file1_fd = make_eof_fd();
         argc--;
         argv++;
