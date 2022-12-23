@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 14:38:37 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/23 15:35:36 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,24 +24,24 @@ static int	ft_strlen(char *s)
 	return (i);
 }
 
-void    handle_error(void)
+void	handle_error(void)
 {
-    perror("");
-    exit(EXIT_FAILURE);
+	perror("");
+	exit(EXIT_FAILURE);
 }
 
-void    print_command_not_found(char *command)
+void	print_command_not_found(char *command)
 {
-    write(2, "bash: ", 6);
-    write(2, command, ft_strlen(command));
-    write(2, ": command not found\n", 20);
-    exit (EXIT_FAILURE);
+	write(2, "bash: ", 6);
+	write(2, command, ft_strlen(command));
+	write(2, ": command not found\n", 20);
+	exit (EXIT_FAILURE);
 }
 
-void    print_file_error(char *filename)
+void	print_file_error(char *filename)
 {
-    write(2, "bash: ", 6);
-    write(2, filename, ft_strlen(filename));
-    write(2, ": ", 2);
-    perror("");
+	write(2, "bash: ", 6);
+	write(2, filename, ft_strlen(filename));
+	write(2, ": ", 2);
+	perror("");
 }

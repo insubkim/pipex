@@ -6,7 +6,7 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 21:27:09 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 14:41:12 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/23 15:34:12 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # define BUFFER_SIZE 100
+
 typedef struct s_list
 {
 	int				fd;

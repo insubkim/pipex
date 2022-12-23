@@ -6,21 +6,21 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 19:15:26 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/20 12:46:10 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/23 15:34:57 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "pipex.h"
 
-void    free_string_arr(char **arr)
+void	free_string_arr(char **arr)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (arr[i])
-    {
-        free(arr[i]);
-        i++;
-    }
-    free(arr);
+	i = 0;
+	while (arr[i])
+	{
+		free(arr[i]);
+		i++;
+	}
+	free(arr);
 }
