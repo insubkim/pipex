@@ -6,11 +6,11 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 19:13:04 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 15:37:07 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:21:54 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 static int	ft_strlen(char *s)
 {

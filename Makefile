@@ -6,7 +6,7 @@
 #    By: inskim <inskim@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/01 22:08:10 by inskim            #+#    #+#              #
-#    Updated: 2022/12/27 09:30:29 by inskim           ###   ########.fr        #
+#    Updated: 2022/12/27 10:16:52 by inskim           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,6 +17,7 @@ CFLAGS = -Wall -Werror -Wextra
 
 SRC = free.c ft_split.c ft_strncmp.c get_next_line.c get_next_line_utils.c handle_error.c main.c make_process.c parse.c pipex_strjoin.c read_file_pipe.c pipex_split.c
 HEADER = pipex.h get_next_line.h
+HEADER_BONUS = pipex_bonus.h get_next_line_bonus.h
 OBJ = $(SRC:.c=.o)
 BONUS_SRC = $(patsubst %.c, $(basename %)_bonus.c, $(SRC)) heredoc_pipe_bonus.c
 BONUS_OBJ = $(BONUS_SRC:.c=.o)
@@ -35,7 +36,7 @@ make_mandatory: $(OBJ) $(HEADER)
 	touch $@
 	rm -f make_bonus
 
-make_bonus: $(BONUS_OBJ) $(HEADER)
+make_bonus: $(BONUS_OBJ) $(HEADER_BONUS)
 	$(CC) $(CFLAGS) -o $(NAME) $(BONUS_OBJ)
 	touch $@
 	rm -f make_mandatory

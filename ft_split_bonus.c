@@ -6,11 +6,11 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 19:15:26 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 15:31:58 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:20:12 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 static int	cnt_word(char const *s, char c)
 {

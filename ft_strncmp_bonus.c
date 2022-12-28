@@ -6,11 +6,11 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 23:37:01 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 15:32:05 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:20:20 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

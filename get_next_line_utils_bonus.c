@@ -6,11 +6,11 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 21:27:09 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/26 11:42:53 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:20:45 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 char	*error_handle(t_list **lst, int fd, char *read_buf)
 {

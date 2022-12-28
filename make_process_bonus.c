@@ -6,11 +6,11 @@
 /*   By: inskim <inskim@student.42seoul.kr>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 15:41:34 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:21:21 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
+#include "pipex_bonus.h"
 
 int	set_pipe(int read_end, int file2_fd, int index, int command_count)
 {

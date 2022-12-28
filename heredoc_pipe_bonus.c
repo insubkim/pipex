@@ -6,12 +6,12 @@
 /*   By: inskim <inskim@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/01 22:08:10 by inskim            #+#    #+#             */
-/*   Updated: 2022/12/23 15:40:29 by inskim           ###   ########.fr       */
+/*   Updated: 2022/12/27 10:21:05 by inskim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "pipex.h"
-#include "get_next_line.h"
+#include "pipex_bonus.h"
+#include "get_next_line_bonus.h"
 
 int	ft_strcmp(char *s1, char *s2)
 {
